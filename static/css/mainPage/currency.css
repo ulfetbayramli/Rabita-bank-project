@@ -1,0 +1,162 @@
+.currency {
+    display: flex;
+    justify-content: space-between;
+    background: #f8fafb;
+    padding: 50px 20px;
+    margin-top: 40px;
+    /* max-width: 1120px; */
+}
+
+/* Left */
+.currency .left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.currency .left .top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e4eff5;
+    padding-bottom: 30px;
+}
+
+.currency .left h3 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #708390;
+}
+
+.currency .top .firstLi {
+    display: flex;
+    flex-direction: column;
+}
+
+.currency .firstLi ul {
+    padding-left: 0;
+}
+
+.currency .top .innerLi {
+    display: flex;
+}
+
+.currency .top p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.83;
+    color: #2e384d;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.currency .top i {
+    margin-top: 12px;
+    margin-left: 10px;
+    color: #de3131;
+}
+
+.currency .bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.currency .bottom .new {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.44px;
+    color: #979ca8;
+    justify-self: flex-start;
+}
+
+.currency .bottom span {
+    color: #2e384d;
+}
+
+.currency .bottom .addtional {
+    font-size: 11px;
+    margin-top: 30px;
+    color: #8e8e8e;
+}
+
+.currency .bottom i {
+    font-size: 18px;
+    margin-right: 10px;
+    border: 2px solid #000000;
+    padding: 5px 11px;
+    border-radius: 50%;
+}
+
+/* Right */
+.currency .right {
+    margin-right: 20px;
+    width: 40%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.currency .right h3 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #2e384d;
+}
+
+.currency .right .top {
+    display: flex;
+    align-items: center;
+    height: 30%;
+}
+
+.currency .right .top select {
+    font-size: 22px;
+    color: rgba(21, 51, 74, .6);
+    outline: none;
+    padding: 5px 10px;
+    margin-right: 10px;
+    max-width: 130px;
+}
+
+.currency .right .bottom {
+    display: flex;
+}
+
+.currency .bottom .first {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e4eff5;
+    padding-bottom: 20px;
+}
+
+.currency .right .bottom input {
+    width: 70%;
+    font-weight: 500;
+    font-size: 34px;
+    color: #2e384d;
+    outline: none;
+    border: none;
+}
+
+.currency .right .bottom select {
+    font-size: 22px;
+    color: rgba(21, 51, 74, .6);
+    outline: none;
+    padding-left: 0;
+    width: 80px;
+    border: none;
+}
+
+.currency .right .second {
+    display: flex;
+    justify-content: space-between;
+}
+
+.currency .right .second p {
+    font-size: 34px;
+    font-weight: 500;
+    padding-top: 20px;
+}

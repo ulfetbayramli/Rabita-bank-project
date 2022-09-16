@@ -1,0 +1,85 @@
+.special_offers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 30px auto;
+}
+
+.special_offers .offer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 33%;
+  height: 350px;
+  background: #f8fafb;
+  padding: 0 0 50px 30px;
+  cursor: pointer;
+}
+
+.special_offers .offer p:nth-child(2) {
+  margin-top: 130px;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 1.6;
+  letter-spacing: 0.67px;
+  text-align: center;
+  color: rgb(110, 187, 32);
+  text-transform: uppercase;
+  width: fit-content;
+  padding: 5px 20px;
+  border-radius: 16px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(110, 187, 32);
+  border-image: initial;
+}
+
+.special_offers .offer p:nth-child(4) {
+  color: #2e384d;
+}
+
+.special_offers h4 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.33;
+  color: #2e384d;
+  margin-top: 26px;
+  transition: all 0.3s;
+}
+
+.special_offers img {
+  position: absolute;
+  right: 0;
+  width: 122px;
+  height: 122px;
+}
+
+.special_offers .offer .bg {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.special_offers .offer:hover .bg {
+  opacity: 0.7;
+}
+
+.offer p {
+  transition: all 0.5s;
+}
+
+.special_offers .offer:hover p,
+.special_offers .offer:hover h4 {
+  color: #ffffff;
+  z-index: 1;
+  border-color: #ffffff;
+}
+
+.special_offers .offer:hover img:nth-child(1) {
+  display: none;
+}

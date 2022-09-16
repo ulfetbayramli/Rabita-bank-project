@@ -1,0 +1,183 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+    <section class="full page_banner fag_banner vacancy_in_page">
+        <div class="center full_h">
+            <div class="page_banner_in full full_h ">
+                <h1>Kart Sifarişi</h1>
+                <p>Kartmane Debet, Kredit və Premium kartlarını buradan sifariş edə bilərsiniz. </p>
+            </div>
+        </div>
+    </section>
+    <div class="container" style="background-color: #f8fafb; padding: 40px 45px; margin-top: 50px;">
+        <h3 style="font-size: 24px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        color: #2e384d;
+        margin-left: 15px;">Onlayn sifariş</h3>
+        <br>
+        <form class="needs-validation container" novalidate>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <select style="margin-right: 15px;" class="form-control form-control-lg" required>
+                        <option selected disabled value="">Karti secin</option>
+                        <option value="">Kartmane debet</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        *Bu bolme doldurulmalidir
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <select style="margin-left: 15px;" class=" form-control form-control-lg col">
+                        <option>Mastercard</option>
+                        <option value="">Visa</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <select style="margin-right: 15px;" class="form-control form-control-lg col" required>
+                        <option selected disabled value="">Valyuta</option>
+                        <option value="">AZN</option>
+                        <option value="">USD</option>
+                        <option value="">EUR</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        *Bu bolme doldurulmalidir
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <select style="margin-left: 15px;" class=" form-control form-control-lg col">
+                        <option>5 il</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <select style="margin-right: 15px;" class="form-control form-control-lg col" required>
+                        <option selected disabled value="">Filial</option>
+                        <option value="">Baş ofis</option>
+                        <option value="">Nəsimi filialı</option>
+                        <option value="">Buta filialı</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        *Bu bolme doldurulmalidir
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <input style="height: 47px; margin-left: 15px;" type="text" class="form-control"
+                        id="validationCustom01" placeholder="Ad" required>
+                    <div class="invalid-feedback">
+                        *Bu bolme doldurulmalidir
+                    </div>
+                </div>
+
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <input style="height: 47px; margin-right: 15px;" type="text" class="form-control"
+                        id="validationCustom01" placeholder="Soyad" required>
+                    <div class="invalid-feedback">
+                        *Bu bolme doldurulmalidir
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="custom-file">
+                        <input  type="file" class="custom-file-input" id="customFile" required>
+                        <label  style="height: 47px; margin-left: 15px; margin-right: -15px;" class="custom-file-label" for="customFile">Şəxsiyyət vəsiqənizin ön üzü</label>
+                        <div class="invalid-feedback">
+                            *Bu bolme doldurulmalidir
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <div class="custom-file">
+                        <input  type="file" class="custom-file-input" id="customFile" required>
+                        <label  style="height: 47px; " class="custom-file-label" for="customFile">Şəxsiyyət vəsiqənizin arxa üzü</label>
+                        <div class="invalid-feedback">
+                            *Bu bolme doldurulmalidir
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <input style="height: 47px; margin-left: 15px;" type="tel" class="form-control"
+                        id="validationCustom01" placeholder="Mobil nömrə" name="meta[11]" required>
+                    <div class="invalid-feedback">
+                        *Bu bolme doldurulmalidir
+                    </div>
+                </div>
+
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <input style="height: 47px; margin-right: 15px;" type="email" class="form-control"
+                        id="validationCustom01" placeholder="E-mail" required>
+                    <div class="invalid-feedback">
+                        *Bu bolme doldurulmalidir
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            
+            <button style="width: 530px; height: 50px; background-color: #6ebb20; color: white;" class="btn" type="submit">Sifariş et →</button>
+
+        </form>
+        <hr>
+        <form class="">
+            <div class=" row">
+                <div class="col" style="max-width: 50%;">
+                    <p style="    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 1.27;
+                    letter-spacing: normal;
+                    color: #2e384d;
+                    font-size: smaller;"> QEYD: Bankdaxili qaydalar əsasında “Öz müştərini tanı” prinsipinə əsasən müştəri ilə işgüzar münasibətlər yalnız müştərinin tam və əhatəli eyniləşdirilməsi və verifikasiyasından sonra yaradılır və daim yenilənir. Bu məqsədlə hər bir müştərinin həqiqi kimliyini təyin etməyə və hər bir müştəri kateqoriyasına məxsus riskləri qiymətləndirməyə imkan verən müvafiq eyniləşdirmə və verifikasiya standartları müəyyən edilmişdir. Qeyd olunanlara əsasən, xidmətlərimizdən ilk dəfə istifadə edən müştərilər yalnız şəxsən iştirak etməklə hesab aça və bununla əlaqədar müqavilə bağlaya, habelə müvafiq plastik kartı təhvil ala bilərlər. Bankımızın artıq müştərisi olan şəxslər qeyd edilən əməliyyatları həmin əməliyyatların həyata keçirilməsi üçün səlahiyyətləri qeyd edilən müvafiq qaydada təsdiq edilmiş etibarnamələr əsasında nümayəndələri vasitəsilə həyata keçirə bilərlər. </p>
+    
+                </div>
+                <div class="needs-validation col" novalidate>
+    
+                    
+                </div>
+            </div>
+
+        </form>
+        
+            
+        
+        
+    </div>
+
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+
+{% endblock %}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <form action="" class="col-5" style="box-shadow: 0 4px 16px 0 rgb(191 197 210 / 30%);
+      background-color: #ffffff;
+      padding: 25px 30px;">
+        <h3>Valyuta kalkulyatoru</h3>
+        <div class="d-flex justify-content-between">
+          <select class="calc-selects" name="" id="" aria-placeholder="Nagd">
+            <option value="">Nagd</option>
+            <option value="">Nagdsiz</option>
+          </select>
+          <select class="calc-selects" name="" id="" aria-placeholder="Alis">
+            <option value="">Alis</option>
+            <option value="">Satis</option>
+          </select>
+        </div>
+        <br>
+        <div>
+          <div>
+          <input type="text" class="calc-input" value="1" id="amount-one">
+          <select name="" id="currency-one" style="border-style: none;">
+            <option value="AZN" >₼</option>
+            <option value="GBP" >£</option>
+            <option value="EUR"  >€</option>
+            <option value="USD"  >$</option>
+          </select>
+          </div>
+          <hr>
+          <div class="swap-rate-container">
+            
+            <div class="rate" id="rate"></div>
+          </div>
+          <div>
+            <input type="text" class="calc-input" value="0.44" id="amount-two" >
+            <select name="" id="currency-two" style="border-style: none;">
+            <option value="GBP" >£</option>
+            <option value="EUR"  >€</option>
+            <option value="USD"  >$</option>
+             
+            </select>
+          </div>
+        </div>
+      </form>
+      <script src="../static/calculator.js/js/calculator.js"></script>
+</body>
+</html>

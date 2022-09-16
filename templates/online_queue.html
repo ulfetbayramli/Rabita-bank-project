@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% block content %}
+{% from "_formhelpers.html" import render_field %}
+
+<!-- Main Section -->
+<main class="main_queue">
+    <div class="container">
+        <h1>Onlayn növbə</h1>
+        <p>Gözləmədən rahat bankçılıq xidmətlərindən
+            faydalanmaq üçün onlayn növbə götürün. </p>
+    </div>
+</main>
+
+<!-- Form Section -->
+<section class="queue container">
+    <h3>Müraciət formu</h3>
+    <p>Onlayn növbə</p>
+    <form method="POST" action="">
+        {{form.csrf_token}}
+        {{ form.hidden_tag() }}
+        <div>
+            <p>
+                {{ form.filial }}<br>
+            </p>
+            <p>
+                {{ form.xidmet }}
+            </p>
+        </div>
+        <div class="secDiv">
+            <p>{{ form.date }}</p>
+            <p>{{ form.number }}</p>
+        </div>
+        <div class="form-actions">
+            <button type="submit" class="btn">SAVE</button>
+        </div>
+        <!-- <div>
+            <select class="select1">
+                <option disabled selected hidden>Filial</option>
+                <option value="1">Lorem ipsum dolor sit amet.</option>
+                <option value="1">Lorem ipsum dolor sit amet.</option>
+                <option value="1">Lorem ipsum dolor sit amet.</option>
+                <option value="1">Lorem ipsum dolor sit amet.</option>
+                <option value="1">Lorem ipsum dolor sit amet.</option>
+            </select>
+            <select class="select2">
+                <option disabled selected hidden>Xidmət Növü</option>
+                <optgroup label="Theropods">
+                    <option>Tyrannosaurus</option>
+                    <option>Velociraptor</option>
+                    <option>Deinonychus</option>
+                </optgroup>
+                <optgroup label="Sauropods">
+                    <option>Diplodocus</option>
+                    <option>Saltasaurus</option>
+                    <option>Apatosaurus</option>
+                </optgroup>
+            </select>
+        </div>
+        <div class="secDiv">
+            <div>
+                <input type="date">
+                <input type="time">
+            </div>
+            <input type="tel">
+        </div>
+        <button>Göndər →</button> -->
+    </form>
+</section>
+
+{% endblock %}

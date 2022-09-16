@@ -1,0 +1,22 @@
+.main_queue {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(275deg, #6ebb20, #129450);
+    height: 50vh;
+}
+
+.main_queue h1 {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1;
+    color: #ffffff;
+}
+
+.main_queue p {
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #ffffff;
+    max-width: 524px;
+}

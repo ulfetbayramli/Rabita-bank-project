@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!-- Main Section -->
+<main class="main_news">
+    <div class="container">
+        <h1>Xəbərlər və elanlar</h1>
+        {% if image_status %}
+        <img src="{{url_for( 'static', filename='images/news1.png')}}" alt="news1">
+        <!-- <img src="{{url_for( 'static', filename='news_images/{{news.image}}')}}" alt=""> -->
+        {% else %}
+        <p></p>
+        {% endif %}
+    </div>
+</main>
+
+<!-- News Content -->
+<section class="news_content container">
+    <h2>{{ news_title }}</h2>
+    {% for row in news_desc %}
+    <p> {{ row }} </p>
+    {% endfor %}
+
+
+    <i class="fas fa-solid fa-print"></i>
+    <i onclick="stopPropagation(event)" class="fas fa-solid fa-share share"></i>
+</section>
+
+<!-- News -->
+<section class="news container">
+    <div class="news_header">
+        <h4>Bunlara da bax</h4>
+        <a href="/news">Daha çox</a>
+    </div>
+    <ul class="news_content">
+        {% if i > 2 %}
+        <li>
+            <a href="/news/{{ news_foot[-1].id }}">
+                <span>{{ news_foot[-1].added_at.strftime('%Y-%m-%d') }}</span>
+                <h3>{{ news_foot[-1].title }}</h3>
+            </a>
+        </li>
+        <li>
+            <a href="/news/{{ news_foot[-2].id }}">
+                <span>{{ news_foot[-2].added_at.strftime('%Y-%m-%d') }}</span>
+                <h3>{{ news_foot[-2].title }}</h3>
+            </a>
+        </li>
+        <li>
+            <a href="/news/{{ news_foot[-3].id }}">
+                <span>{{ news_foot[-3].added_at.strftime('%Y-%m-%d') }}</span>
+                <h3>{{ news_foot[-3].title }}</h3>
+            </a>
+        </li>
+        {% else %}
+        <p>Hec bir xeber yoxudr</p>
+        {% endif %}
+    </ul>
+</section>
+
+<!-- Modal -->
+<div class="share_modal d-none">
+    <div class="share_modal_content" onclick="stopPropagation(event)">
+        <div class="share_modal_header">
+            <h3>Dostlarınızla paylaşın</h3>
+            <i class="btn-close"></i>
+        </div>
+
+        <div class="share_modal_body">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://127.0.0.1:5000/news/{{ news.id }}">
+                <i class="fab fa-brands fa-facebook-f"></i>
+            </a>
+            <a href='https://twitter.com/share?text={{ news.title }}&url=http://127.0.0.1:5000/news/{{ news.id }}'
+                target="_blank" class="tw"><i class="fab fa-brands fa-twitter"></i>
+            </a>
+            <a
+                href="https://www.linkedin.com/shareArticle?mini=true&url=http://127.0.0.1:5000/news/{{ news.id }}&title={{ news.title }}!&source=asdf.com">
+                <i class="fab fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://wa.me/?text={{ news.title }} https%3A%2F%2F127.0.0.1:5000/news%2F{{ news.id }}">
+                <i class="fab fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://telegram.me/share/url?url=http://127.0.0.1:5000/news/{{ news.id }}&text={{ news.title }}">
+                <i class="fab fa-brands fa-telegram"></i>
+            </a>
+        </div>
+    </div>
+</div>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<!-- <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-62ac182d1644227d"></script> -->
+
+{% endblock %}

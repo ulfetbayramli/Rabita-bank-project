@@ -1,0 +1,170 @@
+.footer {
+  padding-top: 40px;
+  background-color: #fff;
+}
+
+.full {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+* {
+  font-family: "Roboto-Regular";
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  border-radius: 0;
+  box-sizing: border-box;
+}
+footer {
+  display: block;
+}
+.center {
+  width: 1170px;
+}
+.center {
+  position: relative;
+  margin: 0 auto;
+}
+.footer_top {
+  height: 100px;
+  border-bottom: 1px solid #e6ebed;
+}
+.flex,
+.header_top_in,
+.header_bottom_in {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+.call_now_footer {
+  width: 76px;
+  height: 36px;
+}
+
+.call_now {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  justify-content: end;
+  opacity: 0.5;
+  width: 51px;
+  height: 24px;
+}
+.footer_menus {
+  display: flex;
+  justify-content: space-between;
+}
+.footer_middle {
+  margin-top: 33px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.flex,
+.header_top_in,
+.header_bottom_in {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul li,
+ol li {
+  list-style-type: none;
+  position: relative;
+  /* float: left; */
+}
+.footer_menus li {
+  display: flex;
+  flex-direction: column;
+}
+.footer_menus li h3,
+.footer_menus li h3 a {
+  opacity: 0.6;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #15334a;
+}
+.footer_menus li > a,
+.footer_menus li p {
+  opacity: 0.6;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.14;
+  letter-spacing: normal;
+  color: #15334a;
+  max-width: 176px;
+}
+.store_links {
+  display: flex;
+  width: auto;
+  align-self: flex-end;
+  margin-top: 30px;
+}
+.store_links a:not(:last-child) {
+  margin-right: 18px;
+}
+.info_bank_logo img {
+  width: 99px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.pp {
+  opacity: 0.4;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #15334a;
+}
+.copyright_box {
+  display: flex;
+  flex-direction: column;
+}
+.info_bank_logo_web {
+  display: none;
+}
+.info_bank_logo img {
+  width: 99px;
+  height: 40px;
+  object-fit: contain;
+}
+.soc_list {
+  align-self: flex-start;
+}
+.soc_list li:not(:last-child) {
+  margin-right: 24px;
+}
+.soc_list li svg {
+  width: 32px;
+  height: 32px;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.soc_list li svg path {
+  fill: #708390;
+}

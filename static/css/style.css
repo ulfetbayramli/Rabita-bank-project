@@ -1,0 +1,47 @@
+
+@import "./mainPage/header.css";
+@import "./mainPage/slider.css";
+@import "./mainPage/products.css";
+@import "./mainPage/mobile_slider.css";
+@import "./mainPage/offers.css";
+@import "./mainPage/calculator.css";
+@import "./mainPage/currency.css";
+@import "./mainPage/main_news.css";
+
+/* News */
+@import "./newsPage/news_list.css";
+@import "./newsPage/news.css";
+@import "./newsPage/modal.css";
+
+/* Online Queue */
+@import "./online_queue/online_queue.css";
+@import "./online_queue/form.css";
+
+/* Font Family */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  font-family: "Lobster", cursive;
+  font-family: "Roboto", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+  color: #2e384d;
+}
+
+select {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1200px;
+}

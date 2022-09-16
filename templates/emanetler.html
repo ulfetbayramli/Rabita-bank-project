@@ -1,0 +1,319 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+
+    <section class="full page_banner fag_banner vacancy_in_page"
+        style="background-image: linear-gradient(275deg, #6ebb20, #129450)">
+        <div class="center full_h">
+            <div class="page_banner_in full full_h h_slider_item h_slider_item2">
+                <div class="full_h h_slider_text_box">
+                    <h1>Fərdi Əmanətlər</h1>
+                    <p></p>
+                </div> <img class="h_slider_img" src="https://www.rabitabank.com/uploads/posts/2019/11/00034.png"
+                    alt="Fərdi Əmanətlər" title="Fərdi Əmanətlər">
+            </div>
+        </div>
+
+
+    </section>
+    <div class="container">
+        <div class="full f_k_slider_box for_biznes_k_box">
+            <ul class="full f_kredit_slider for_biznes emanet_ferdi_list">
+                {% for card in cards %}
+                <li class="f_k_slider_li">
+                    <div class="f_kredit_s_sides f_kredit_s_l_side">
+                        <div class="full f_k_img_box"> <img
+                                src=""
+                                alt="Universal Əmanət" title="Universal Əmanət" class="full full_h"> </div>
+                        <div class="full f_kredit_bottom">
+                            
+                            
+                            <div class="full f_k_b_top">
+                                <h3>{{card.title}}</h3> 
+                            </div>
+                            <div class="full f_b_bottom">
+                                <ul class="full f_k_detail_list inline">
+                                    <li>
+                                        <p>Müddət:</p> <strong>36 ayadək</strong>
+                                    </li>
+                                    <li>
+                                        <p>Faiz dərəcəsi:</p> <strong>10.50 %-dək</strong>
+                                    </li> <!-- <li> <p>Minimal məbləğ:</p> <strong>200</strong> </li> -->
+                                </ul>
+                                <a href="./emanetler_erafli.html" title="Universal Əmanət"
+                                    class=" f_k_read_more">Daha ətraflı</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                {% endfor %}
+                <li class="f_k_slider_li">
+                    <div class="f_kredit_s_sides f_kredit_s_l_side">
+                        <div class="full f_k_img_box"> <img
+                                src="https://www.rabitabank.com/uploads/posts/2019/11/Ushaq2.jpg"
+                                alt="Uşaq yığım əmanəti" title="Uşaq yığım əmanəti" class="full full_h"> </div>
+                        <div class="full f_kredit_bottom">
+                            <div class="full f_k_b_top">
+                                <h3>Uşaq yığım əmanəti</h3>
+                            </div>
+                            <div class="full f_b_bottom">
+                                <ul class="full f_k_detail_list inline">
+                                    <li>
+                                        <p>Müddət:</p> <strong>216 ayadək</strong>
+                                    </li>
+                                    <li>
+                                        <p>Faiz dərəcəsi:</p> <strong>5 %-dək</strong>
+                                    </li> <!-- <li> <p>Minimal məbləğ:</p> <strong>100 AZN/USD</strong> </li> -->
+                                </ul>
+                                <!--<a href='https://www.rabitabank.com/usaq-yigim-emaneti-1#online_order_section' class=' f_k_read_more is_green'>Sifariş et →</a>-->
+                                <a href="https://www.rabitabank.com/usaq-yigim-emaneti-1" title="Uşaq yığım əmanəti"
+                                    class=" f_k_read_more">Daha ətraflı</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="f_k_slider_li">
+                    <div class="f_kredit_s_sides f_kredit_s_l_side">
+                        <div class="full f_k_img_box"> <img
+                                src="https://www.rabitabank.com/uploads/posts/2021/01/Depoztariy.jpg"
+                                alt="Saxlanc seyfləri" title="Saxlanc seyfləri" class="full full_h"> </div>
+                        <div class="full f_kredit_bottom">
+                            <div class="full f_k_b_top">
+                                <h3>Saxlanc seyfləri</h3>
+                            </div>
+                            <div class="full f_b_bottom">
+                                <ul class="full f_k_detail_list inline">
+                                    <!-- <li> <p>Minimal məbləğ:</p> <strong></strong> </li> -->
+                                </ul>
+                                <!--<a href='https://www.rabitabank.com/saxlanc-seyfleri#online_order_section' class=' f_k_read_more is_green'>Sifariş et →</a>-->
+                                <a href="https://www.rabitabank.com/saxlanc-seyfleri" title="Saxlanc seyfləri"
+                                    class=" f_k_read_more">Daha ətraflı</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <section class="full f_k_order online_order_section" id="online_order_section">
+            <div class="full f_k_order_in">
+                <div class="full online_order_title">
+                    <h3>Onlayn sifariş</h3>
+                </div>
+                <form method="post" class="check_form full" action="https://www.rabitabank.com/ferdi-emanetler"> <input
+                        type="hidden" name="validate"
+                        value="befae0b445a051c04a63f658102968ca1013e81acdf8b1cf72130016ab57a4378b78d02e006b672e532a0fde3f03d8af7d7a373f80254f9b4cdde634e985ab46">
+                    <input type="hidden" name="token"
+                        value="92978d020baef0b80edee4b1ed8482b0671f583b99bb4a918f62cc89a85784f799dc52550ae4df486367f530af263086e9841b8413002889f446ddcc064d376b">
+                    <input type="hidden" name="g-recaptcha-response" class="g-recaptcha-response"
+                        value="03AGdBq26GKtNQNu20VmGlpqxAocLIlms8FttqQYjaI3akdrzKmEpwGssB5xmMiwX7Ae_2DfD-kF7Tns4f1u3STQKDpOiFMAvr1HcvppYZ_MikSVbcv5sCzs2ybkPwG-RyykmaxI4WZshDlB1fuFA1I4y0uO7BnScoFcm_V3rvtoIyVn-zMt2ZFeV6h2xgtASP0GPoG8foce8bIKc_vmVHyiLAT75bPzCf4Us0issmmHRP4vwtRcxx5II5VbtMDPC4qXl5iGi80SckHhrjKdmIsDlot6I9mwQidaJVp7nqg-_VZUGOR5TnQa2i2atQsgidCO-OD2Go3Ppkez-3_hootd9waGXsZJHM3LvNpNIhHYqRxFxya7ZDk5HT4r6xvgb2AsRrhqVqK6vyo2i5jvy2caNco_CwlM-wleOupBUI1KMl80esEsLdPLjgeItYZT5EjNQE4Yvm8_w8">
+                    <div class="k_order_steps">
+                        <ul class="popup_input_list calc_input_list calc_input_list33 full ">
+                            <li> <input type="text" name="titles[]" placeholder="Adınız"
+                                    class="popup_input full required"> <label class="full">Adınız</label> <span
+                                    class="input_message input_error_msg">* Bu bölmə doldurulmalıdır</span> </li>
+                            <li> <input type="text" name="titles[]" placeholder="Soyadınız"
+                                    class="popup_input full required"> <label class="full">Soyadınız</label> <span
+                                    class="input_message input_error_msg">* Bu bölmə doldurulmalıdır</span> </li>
+                            <select class="form-control form-control-lg col-6 " style="margin-top: 36px;">
+                                <option label="Əmanət növünü seçin">Universal Əmanət</option>
+                                <option value=""></option>
+                                <option value="">Uşaq yığım əmanəti</option>
+                            </select>
+                            <li> <input type="tel" name="meta[1]" placeholder="Mobil nömrə"
+                                    class="popup_input full required"> <label class="full">Mobil nömrə</label> <span
+                                    class="input_message input_error_msg">* Bu bölmə doldurulmalıdır</span> </li>
+                        </ul> <button type="submit" name="order_emanet"
+                            class="k_order_step_btn calc_btn calc_order_now flex">Davam et →</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="full f_k_order online_order_section" id="online_order_section">
+        <div class="full f_k_order_in">
+        <div style="margin-top: 40px !important;" id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li style="background-color: rgb(120, 109, 109) !important;" data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li style="background-color: rgb(120, 109, 109) !important;" data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li style="background-color: rgb(120, 109, 109) !important;" data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 style="
+                                font-size: 40px;
+                                font-weight: 500;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: 1.2;
+                                letter-spacing: normal;
+                                color: #2e384d;
+                                font-family: 'Roboto-Medium';
+                                text-align: left;">Rabita Mobile</h5>
+                                <p style="
+                                opacity: 0.6;
+                                font-size: 20px;
+                                font-weight: normal;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: 1.75;
+                                letter-spacing: normal;
+                                color: #15334a;
+                                margin-top: 12px;
+                                width: 90%;
+                                text-align: left;">Rabita Mobile ilə banka getməyə ehtiyac yoxdur, bankınız hər zaman yanınızdadır!</p>
+                                <a style="padding: 15px 32px;
+                                font-size: 16px;
+                                font-weight: 600;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: normal;
+                                letter-spacing: 0.3px;
+                                text-align: center;
+                                color: #ffffff;
+                                background-color: #2e384d;
+                                margin-top: 30px;
+                                text-decoration: none;
+                                border-radius: 6px;
+                                float: left;
+                                " href="https://www.rabitabank.com/internet-bankciliq" title="İnternet Bankçılıq" target="_blank" class="read_more_s_btn " tabindex="-1">Daha ətraflı</a>
+                            </div>
+                                
+                        </div>
+                        <div class="col">
+                            <img src="static/kc1.png" class="d-block w-100" alt="...">
+                        </div>  
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 style="
+                                font-size: 40px;
+                                font-weight: 500;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: 1.2;
+                                letter-spacing: normal;
+                                color: #2e384d;
+                                font-family: 'Roboto-Medium';
+                                text-align: left;">RabitaBot</h5>
+                                <p style="
+                                opacity: 0.6;
+                                font-size: 20px;
+                                font-weight: normal;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: 1.75;
+                                letter-spacing: normal;
+                                color: #15334a;
+                                margin-top: 12px;
+                                width: 90%;
+                                text-align: left;">Azərbaycanın ilk maliyyə çatbotu!</p>
+                                <a style="padding: 15px 32px;
+                                font-size: 16px;
+                                font-weight: 600;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: normal;
+                                letter-spacing: 0.3px;
+                                text-align: center;
+                                color: #ffffff;
+                                background-color: #2e384d;
+                                margin-top: 30px;
+                                text-decoration: none;
+                                border-radius: 6px;
+                                float: left;
+                                " href="https://www.rabitabank.com/internet-bankciliq" title="İnternet Bankçılıq" target="_blank" class="read_more_s_btn " tabindex="-1">Daha ətraflı</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="static/kc2.png" class="d-block w-100" alt="...">
+                        </div>  
+                    </div>
+                    
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 style="
+                                font-size: 40px;
+                                font-weight: 500;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: 1.2;
+                                letter-spacing: normal;
+                                color: #2e384d;
+                                font-family: 'Roboto-Medium';
+                                text-align: left;">İnternet Bankçılıq</h5>
+                                <p style="
+                                opacity: 0.6;
+                                font-size: 20px;
+                                font-weight: normal;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: 1.75;
+                                letter-spacing: normal;
+                                color: #15334a;
+                                margin-top: 12px;
+                                width: 90%;
+                                text-align: left;">Hesablarınızı idarə etmək rahatdır!</p>
+                                <a style="padding: 15px 32px;
+                                font-size: 16px;
+                                font-weight: 600;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: normal;
+                                letter-spacing: 0.3px;
+                                text-align: center;
+                                color: #ffffff;
+                                background-color: #2e384d;
+                                margin-top: 30px;
+                                text-decoration: none;
+                                border-radius: 6px;
+                                float: left;
+                                " href="https://www.rabitabank.com/internet-bankciliq" title="İnternet Bankçılıq" target="_blank" class="read_more_s_btn " tabindex="-1">Daha ətraflı</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="static/kc3.png" class="d-block w-100" alt="...">
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions"
+                data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions"
+                data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </button>
+        </div>
+        </div>
+        </section>
+    
+         
+
+</div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+    </script>
+
+{% endblock %}

@@ -1,0 +1,333 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!-- Main Slider Section -->
+<main class="main_slider">
+    <div id="carousel_main" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel_main" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel_main" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel_main" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carousel_main" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carousel_main" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <div class="sliderContent">
+                    <h3>Apple Pay indi Rabitəbank müştəriləri üçün də aktivdir!</h3>
+                    <p></p>
+                    <a class="more">Daha Etrafli</a>
+                </div>
+                <img src="{{url_for( 'static', filename='images/slider1.webp' )}}" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+                <div class="sliderContent">
+                    <h3>Nağd pul krediti üzrə kampaniya</h3>
+                    <p>Krediti düz 12-dən vur!</p>
+                    <a class="more">Daha Etrafli</a>
+                    <a class="more">Sifaris Et</a>
+                </div>
+                <img src="{{url_for( 'static', filename='images/slider2.webp' )}}" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+                <div class="sliderContent">
+                    <h3>Lombard krediti üzrə kampaniya</h3>
+                    <p></p>
+                    <a class="more">Daha Etrafli</a>
+                    <a class="more">Sifaris Et</a>
+                </div>
+                <img src="{{url_for( 'static', filename='images/slider3.webp' )}}" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+                <div class="sliderContent">
+                    <h3>Faizsiz Avans </h3>
+                    <p>Rabitəbankdan əməkhaqqı alanlara “Faizsiz avans”</p>
+                    <a class="more">Daha Etrafli</a>
+                    <a class="more">Sifaris Et</a>
+                </div>
+                <img src="{{url_for( 'static', filename='images/slider4.webp' )}}" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+                <div class="sliderContent">
+                    <h3>Kartmane sifariş edin, çatdıraq!</h3>
+                    <p>Banka gəlməyin</p>
+                    <a class="more">Daha Etrafli</a>
+                    <a class="more">Sifaris Et</a>
+                </div>
+                <img src="{{url_for( 'static', filename='images/slider5.webp' )}}" class="d-block" alt="...">
+            </div>
+        </div>
+        <!-- <button class="carousel-control-prev" type="button"
+                data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button"
+                data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button> -->
+    </div>
+</main>
+
+<!-- Products Section -->
+<section class="products container">
+    <div class="product">
+        <img src="{{url_for( 'static', filename='images/product_img1.webp' )}}" alt="">
+        <h4>Fərdi kreditlər</h4>
+        <p>12%</p>
+        <p>-dən başlayaraq</p>
+        <a href="#">Sifariş et →</a>
+    </div>
+    <div class="product">
+        <img src="{{url_for( 'static', filename='images/product_img2.webp' )}}" alt="">
+        <h4>Kartmane Debet</h4>
+        <p>40%</p>
+        <p>-dək cashback imkanı</p>
+        <a href="#">Sifariş et →</a>
+    </div>
+    <div class="product">
+        <img src="{{url_for( 'static', filename='images/product_img3.webp' )}}" alt="">
+        <h4>Fərdi Əmanətlər</h4>
+        <p>10.5%</p>
+        <p>-dək illik gəlir</p>
+        <a href="#">Sifariş et →</a>
+    </div>
+</section>
+
+<!-- Mobile Section -->
+<section class="mobile_slider container">
+    <div id="carousel_mobile" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel_mobile" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel_mobile" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel_mobile" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <div class="sliderContent">
+                    <h4>Rabita Mobile</h4>
+                    <p>Rabita Mobile ilə banka getməyə ehtiyac yoxdur, bankınız hər zaman yanınızdadır!</p>
+                    <a href="#" class="more">Daha ətraflı</a>
+                </div>
+                <img src="{{url_for( 'static', filename='images/mobile1.webp' )}}" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+                <div class="sliderContent">
+                    <h4>RabitaBot</h4>
+                    <p>Azərbaycanın ilk maliyyə çatbotu!</p>
+                    <a href="#" class="more">Daha ətraflı</a>
+                </div>
+                <img src="{{url_for( 'static', filename='images/mobile2.webp' )}}" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+                <div class="sliderContent">
+                    <h4>İnternet Bankçılıq</h4>
+                    <p>Hesablarınızı idarə etmək rahatdır!</p>
+                    <a href="#" class="more">Daha ətraflı</a>
+                </div>
+                <img src="{{url_for( 'static', filename='images/mobile3.webp' )}}" class="d-block" alt="...">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Special Offers Section -->
+<section class="special_offers container">
+    <div class="offer">
+        <img src="{{url_for( 'static', filename='images/offer1.webp')}}" alt="">
+        <p>Kartmane</p>
+        <h4>“Kartmane” ilə üstünlüklərlə yaşa</h4>
+        <p>"Kartmane"nin üstünlükləri ilə yaşayın</p>
+        <img class="bg" src="https://www.rabitabank.com/uploads/fields/2019/11/Kartmane.jpg" alt="kartname">
+    </div>
+    <div class="offer">
+        <img src="{{url_for( 'static', filename='images/offer2.webp')}}" alt="">
+        <p>Biznes</p>
+        <h4>Kənd Təsərrüfatı kreditləri</h4>
+        <p>Kənd təsərrüfatı kreditləri ilə <br> işinizə dəyər qatın </p>
+        <img class="bg" src="https://www.rabitabank.com/uploads/fields/2019/11/AKIA_1.jpg" alt="biznes">
+    </div>
+    <div class="offer">
+        <img src="{{url_for( 'static', filename='images/offer3.webp')}}" alt="">
+        <p>Rabitabot</p>
+        <h4>Dostlarınla hesabı alman üsulu böl!</h4>
+        <p>RabitaBot ilə hesabı dostların arasında <br> rahatlıqla bölə bilərsiniz </p>
+        <img class="bg" src="https://www.rabitabank.com/uploads/fields/2019/11/Bot.jpg" alt="rabitabot">
+    </div>
+</section>
+
+<!-- Calculator Section -->
+<section class="calculator container">
+    <h3>Nağd pul krediti 12%-dən</h3>
+    <ul class="calc">
+        <li>
+            <span>Müddət (ay)</span>
+            <input id="calcInp1" class="inp" value="3" type="number">
+            <p>ay</p>
+            <input id="calcRange1" min="3" max="36" class="range" type="range">
+        </li>
+        <li>
+            <span>Kredit məbləği</span>
+            <input id="calcInp2" class="inp" value="10150" type="number">
+            <p class="azn">AZN</p>
+            <input id="calcRange2" min="300" max="20000" class="range" type="range">
+        </li>
+        <li>
+            <span>Faiz dərəcəsi (illik)</span>
+            <input id="calcInp3" class="inp" value="12" type="number">
+            <p>%</p>
+            <input id="calcRange3" min="12" max="30" class="range" type="range">
+        </li>
+    </ul>
+    <ul class="results">
+        <li>
+            <span>Ümumi məbləğ</span>
+            <p class="resultAll">10353.00 AZN</p>
+        </li>
+        <li>
+            <span>Faiz məbləği</span>
+            <p class="resultPersentage">203.00 AZN</p>
+        </li>
+        <li>
+            <span>Aylıq ödəniş</span>
+            <p class="resultMonthsly">3451.00 AZN</p>
+        </li>
+        <li><a href="#">Sifariş et →</a></li>
+    </ul>
+</section>
+
+<!-- Currency Section -->
+<section class="currency container">
+    <div class="left">
+        <ul class="top">
+            <li class="firstLi">
+                <h3>Valyuta</h3>
+                <ul>
+                    <li class="innerLi">
+                        <p>GBP</p>
+                    </li>
+                    <li class="innerLi">
+                        <p>EUR</p>
+                    </li>
+                    <li class="innerLi">
+                        <p>USD</p>
+                    </li>
+                </ul>
+            </li>
+            <li class="firstLi">
+                <h3>Alış</h3>
+                <ul>
+                    <li class="innerLi">
+                        <p>{{ gbp}}</p>
+                        <i class="fas fa-solid fa-arrow-down"></i>
+                    </li>
+                    <li class="innerLi">
+                        <p>{{ eur-0.01 }}</p>
+                        <i class="fas fa-solid fa-arrow-down"></i>
+                    </li>
+                    <li class="innerLi">
+                        <p>{{ usd-0.01 }}</p>
+                        <i class="fas fa-solid fa-arrow-down"></i>
+                    </li>
+                </ul>
+            </li>
+            <li class="firstLi">
+                <h3>Satış</h3>
+                <ul>
+                    <li class="innerLi">
+                        <p>{{ gbp +0.01 }}</p>
+                        <i class="fas fa-solid fa-arrow-down"></i>
+                    </li>
+                    <li class="innerLi">
+                        <p>{{ eur + 0.01 }}</p>
+                        <i class="fas fa-solid fa-arrow-down"></i>
+                    </li>
+                    <li class="innerLi">
+                        <p>{{ usd + 0.01 }}</p>
+                        <i class="fas fa-solid fa-arrow-down"></i>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="bottom">
+            <p class="new">Yeniləndi: <span>{{ date }}</span></p>
+            <p class="addtional">
+                <i class="fas fa-solid fa-info"></i>
+                Hal-hazırda bankımızda müvəqqəti olaraq
+                rus
+                rublunun nağd alışı və satışı həyata
+                keçirilmir.
+            </p>
+        </div>
+    </div>
+    <div class="right">
+        <h3>Valyuta kalkulyatoru</h3>
+        <div class="top">
+            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                <option value="1">Nağd</option>
+                <option value="2">Nağdsız</option>
+            </select>
+            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                <option value="1">Alış</option>
+                <option value="2">Satış</option>
+            </select>
+        </div>
+        <div class="bottom">
+            <div class="first">
+                <input class="currency_input" value="1" min="1" type="number">
+                <select class="select1">
+                    <option value="AZN"> Manat </option>
+                    <option disabled value="RUB"> Rubl </option>
+                    <option value="USD"> Dollar </option>
+                    <option value="EUR"> Euro </option>
+                </select>
+            </div>
+            <div class="second">
+                <p class="currency_result">2.00</p>
+                <select class="select2">
+                    <option value="AZN"> Manat </option>
+                    <option disabled value="RUB"> Rubl </option>
+                    <option value="USD"> Dollar </option>
+                    <option value="EUR"> Euro </option>
+                </select>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- News -->
+<section class="news container">
+    <div class="news_header">
+        <h4>Bunlara da bax</h4>
+        <a href="/news">Daha çox</a>
+    </div>
+    <ul class="news_content">
+        {% if news_foot | length > 2 %}
+        <li class="row">
+            <a href="/news/{{ news_foot[-1].id }}">
+                <span>{{ news_foot[-1].added_at.strftime('%d/%m/%Y') }}</span>
+                <h3>{{ news_foot[-1].title }}</h3>
+            </a>
+        </li>
+        <li class="row">
+            <a href="/news/{{ news_foot[-2].id }}">
+                <span>{{ news_foot[-2].added_at.strftime('%d/%m/%Y') }}</span>
+                <h3>{{ news_foot[-2].title }}</h3>
+            </a>
+        </li>
+        <li class="row">
+            <a href="/news/{{ news_foot[-3].id }}">
+                <span>{{ news_foot[-3].added_at.strftime('%d/%m/%Y') }}</span>
+                <h3>{{ news_foot[-3].title }}</h3>
+            </a>
+        </li>
+        {% else %}
+        <p>Hec bir xeber yoxdur</p>
+        {% endif %}
+    </ul>
+</section>
+
+{% endblock %}
